@@ -1,0 +1,24 @@
+# This file is managed by Puppet -- logstash::service
+
+###############################################################################
+# These settings are ONLY used by $LS_HOME/bin/system-install to create a custom
+# startup script for Logstash.  It should automagically use the init system
+# (systemd, upstart, sysv, etc.) that your Linux distribution uses.
+#
+# After changing anything here, you need to re-run $LS_HOME/bin/system-install
+# as root to push the changes to the init script.
+################################################################################
+
+JAVACMD=/usr/bin/java
+LS_GC_LOG_FILE=/var/log/logstash/gc.log
+LS_GROUP=logstash
+LS_HOME=/usr/share/logstash
+LS_JAVA_OPTS=""
+LS_NICE=19
+LS_OPEN_FILES=16384
+LS_OPTS=--path.settings=/etc/logstash
+LS_PIDFILE=/var/run/logstash.pid
+LS_SETTINGS_DIR=/etc/logstash
+LS_USER=logstash
+SERVICE_DESCRIPTION="logstash"
+SERVICE_NAME="logstash"

@@ -1,0 +1,11 @@
+
+## Startup - Ubuntu 14.04.2-Ubuntu 
+sudo initctl start logstash
+sudo initctl stop logstash
+
+## Oracle java not support for puppet modeult on ubuntu
+#===Java===
+#ubuntu jdk 8 =>
+sudo add-apt-repository ppa:webupd8team/java -y
+sudo apt-get update
+sudo apt-get install oracle-java8-installer

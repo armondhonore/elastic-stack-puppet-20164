@@ -1,0 +1,18 @@
+input { 
+   tcp {
+    host=> "0.0.0.0"
+    port => "5044"
+  }
+   stdin { } 
+
+}
+
+filter {
+  mutate { add_field => { "show" => "Yo dog I heard you liked data. So I put data in your data so when you call data you have data" } }
+}
+
+output {
+
+  elasticsearch { hosts => ["159.203.103.45:9200"] }
+  stdout { codec => rubydebug }
+}
