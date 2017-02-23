@@ -13,7 +13,7 @@ This project is to get a basic clustered setup so support multiple logstash and 
 
 The approach that will simplify the solution and move more of the load onto the client and potentially remove bottlenecks is the beats => elasticsearch solution this however has a specific use case and should not be used if you don't have a simple need. if you are doing complicated filtering or pipelining of your data you will need to keep log stash in your solution. 
 
-![Progressive Elastic Stack solution](POC-approach.png) 
+![Progressive Elastic Stack solution](Client-to-es.png) 
 
 
 The key for logging or searching solutions with ES is understanding the amount of Data that needs to be processed and configuring the architecture to manage enough through put, and redundancy so that you have a durable and searchable solution.
