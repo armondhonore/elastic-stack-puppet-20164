@@ -1,0 +1,16 @@
+#Elastic search startup
+
+sudo systemctl start elasticsearch.service
+sudo systemctl stop elasticsearch.service
+
+## /etc/Hosts uses 127.0.1.1 for hostname on Centos 6
+## Oracle JDK Java still isn't supported by puppet java module
+===Java===
+#ubuntu jdk => 8 
+sudo add-apt-repository ppa:webupd8team/java -y
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
+
+### Network needs to be configured on non-loopback interface
+# in this case prodcast on static external ip to eth, my need more config on a multi interface server
+# puppet manages this by the $::ipaddess default fact

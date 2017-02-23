@@ -1,0 +1,24 @@
+# This file is managed by Puppet -- elasticsearch::config
+#
+# Set the 'jvm_options' parameter on the elasticsearch class to change this file.
+
+-Dfile.encoding=UTF-8
+-Dio.netty.noKeySetOptimization=true
+-Dio.netty.noUnsafe=true
+-Dio.netty.recycler.maxCapacityPerThread=0
+-Djava.awt.headless=true
+-Djdk.io.permissionsUseCanonicalPath=true
+-Djna.nosys=true
+-Dlog4j.shutdownHookEnabled=false
+-Dlog4j.skipJansi=true
+-Dlog4j2.disable.jmx=true
+-XX:+AlwaysPreTouch
+-XX:+DisableExplicitGC
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:+UseCMSInitiatingOccupancyOnly
+-XX:+UseConcMarkSweepGC
+-XX:CMSInitiatingOccupancyFraction=75
+-Xms2g
+-Xmx2g
+-Xss1m
+-server

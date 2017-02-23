@@ -1,0 +1,7 @@
+### MANAGED BY PUPPET ###
+---
+node.name: elastic1-es-01
+network.host: 159.203.103.45
+path.data: "/var/lib/elasticsearch/es-01"
+path.logs: "/var/log/elasticsearch/es-01"
+
